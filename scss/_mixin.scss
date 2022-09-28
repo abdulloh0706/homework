@@ -1,0 +1,21 @@
+@mixin center__three-h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 24px;
+    color: #0A377B;
+    font-family: sans-serif;
+}
+@mixin center__three-p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #000000;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+@mixin breakpoint($screen-width) {
+    @media only screen and (max-width: $screen-width){
+        @content
+    }
+}
